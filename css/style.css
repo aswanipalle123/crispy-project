@@ -1,0 +1,376 @@
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+font-family: verdana;
+}
+header ul li{
+    display:inline-block;
+    padding:10px 20px;
+}
+header ul li:last-child{
+    float:right;
+}
+header{
+    background-color: black;
+    color:white;
+}
+header{
+    padding:0px 40px;
+}
+.header ul li i{
+    padding-right:9px;
+    color:red;
+    font-size:20px;
+}
+.header ul li i{
+    padding-right:9px;
+    color:red;
+    font-size:20px;
+}
+nav>a{
+    float:left;
+}
+nav>ul{
+    float:right;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li:after{
+    content:'';
+    width:0%;
+    height:2px;
+    background-color: crimson;
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width:100%;
+}
+nav{
+    padding:10px;
+    background-color:orange!important;
+    padding:10px 40px;
+}
+nav::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+}
+nav button{
+    border:none;
+    outline:none;
+    padding:10px 10px;
+    background-color: white;
+    border-radius:5px;
+    font-size:20px;
+}
+
+/*.banner .row{
+display:flex;
+justify-content: space-between;
+}*/
+
+.banner{
+    padding:0px 40px;
+}
+.banner img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
+.banner .row .col-1{
+    width:50%;
+    float:left;
+}
+.banner{
+    overflow:hidden;
+    background-color: #f9f9fb;
+}
+.banner .content{
+    margin-top:30px;
+    line-height:40px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.banner .col-1 .content h1{
+    text-transform: uppercase;
+    color:red!important;;
+}
+.banner .content h1:hover{
+    -webkit-background-stroke:2px #fff;
+    color:transparent;
+}
+.banner .content .btn1{
+    border:none;
+    color:white;
+    background-color:red;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px 10px;
+}
+
+.banner .content .btn2{
+    border:none;
+    color:white;
+    background-color:black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px 10px;
+}
+.abs .row{
+    display:flex;
+    justify-content: space-around;
+}
+.abs{
+    padding:10px 40px;
+    margin-top:30px;
+}
+.abs .content{
+    line-height:30px;
+    word-spacing:1px;
+    letter-spacing:1px;
+    margin-top:10px;
+}
+.abs .content h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.abs .title{
+    text-align: center;
+    text-transform: capitalize;
+}
+.abs .col-2 .row>.col{
+    width:25%;
+    float:left;
+}
+.abs .col-2 .row>.col .bg{
+    background-color: orange;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white
+}
+.abs .col-2 .row{
+    overflow: hidden;
+    text-align: center;
+}
+.text .title {
+    text-align: center;
+    text-transform: capitalize;
+}
+.test .row{
+    display:flex;
+    justify-content: space-between;
+}
+.test{
+    padding:10px 60px;
+    margin-top:30px;
+}
+
+.test .content{
+    padding:10px;
+    letter-spacing: 1px;
+    word-spacing:1px;
+    line-height:30px;
+}
+.test .content p{
+    background-color: orangered;
+    padding:0px 5px;
+    text-align: justify;
+}
+/*test .image .parent{
+    overflow: hidden;
+}*/
+.test .image img{
+    height:150px;
+    width:150px;
+    transition: all 1s ease;
+}
+.test .image img:hover{
+    transform: scale(3,3);
+}
+/*nav{
+    display:flex;
+    justify-content: space-around;
+}
+nav ul li{
+    display:inline-block;
+    padding:10px;
+}
+nav li a{
+    text-decoration: none;
+}
+nav a{
+    text-decoration: none;
+}*/
+#details{
+    display:flex;
+    flex-direction: column;
+    background-color:red;
+    text-align: center;
+    line-height: 30px;
+    padding:10px 20px;
+    color:white;
+    font-size: 20px;
+}
+#footer h3{
+    color:red;
+}
+
+#footer .col{
+    width:25%;
+    float:left;
+    padding:30px;
+    line-height:30px;
+}
+#footer{
+    background-color: black;
+    color:white;
+    margin-bottom:5px;
+}
+#footer .row{
+    overflow: hidden;
+}
+#copy{
+    text-align: center;
+    padding:15px;
+    background-color: black;
+    color:white;
+    
+}
+@media(max-width:500px){
+    .header ul li:last-child{
+        float:none;
+    }
+    .header ul{
+        /*display:flex;
+       /* flex-direction: column;/*or row*/
+        /*justify-content: start;*/
+        display: inline-block;
+    }
+    .header ul li i{
+        padding-right:10px;
+        color:red;
+        font-size:20px;
+       
+    }
+    nav>a{
+        float:none;
+    }
+    nav>ul{
+        float:none;
+    }
+    nav ul li{
+      padding:20px;
+       display: block; 
+    }
+    nav ul a.active{
+        color:green;
+    }
+    .banner .row .col-1{
+        width:100%;
+        float:none;
+    }
+    .banner .col .content img{
+        width:300px;
+        height:300px;
+        border-radius:50%;
+        display: flex;
+        justify-content: start;
+        
+    }
+    .abs .row{
+        display:block;
+        justify-content: space-around;
+    }
+    .abs .col-2 .row>.col{
+        width:25%;
+        float:left;
+    }
+    .test .row{
+        display:block;
+        justify-content: space-between;
+    }
+    #footer .col{
+        width:100%;
+        float:none;
+        padding:30px;
+        line-height:30px;
+    }
+    #copy{
+         padding:15px;
+        background-color: black;
+        color:white;
+    }
+}
+@media(min-width:501px) and (max-width:900px){
+    .header ul li:last-child{
+        float:none;
+    }
+    .header ul{
+        /*display:flex;
+       /* flex-direction: column;/*or row*/
+        /*justify-content: start;*/
+        display: inline-block;
+    }
+    .header ul li i{
+        padding-right:10px;
+        color:red;
+        font-size:20px;
+       
+    }
+    nav>a{
+        float:none;
+    }
+    nav>ul{
+        float:none;
+    }
+    nav ul li{
+      
+       display: block; 
+    }
+    .banner .row .col-1{
+        width:100%;
+        float:none;
+    }
+    .abs .row{
+        display:block;
+        justify-content: space-around;
+    }
+    .abs .col-2 .row>.col{
+        width:25%;
+        float:left;
+    }
+    .test .row{
+        display:block;
+        justify-content: space-between;
+    }
+    #footer .col{
+        width:100%;
+        float:none;
+        padding:30px;
+        line-height:30px;
+    }
+    #copy{
+         padding:15px;
+        background-color: black;
+        color:white;
+    }
+}
+
